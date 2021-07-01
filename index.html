@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JavaScript Pizza Place</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+    <h1>Vanilla JavaScript Pizza Place</h1>
+    <script type="text/javascript" src="app.js"></script>
+    <body class="container">
+        <header class="logo">
+            <!--<a href="https://codingthesmartway.com" target="_blank">
+                <img class="logo" src="images/ctsw-logo.png" alt="CodingTheSmartWay.com">
+            </a>--->
+
+            <h2 class="headline">The best pizza place around</h2>
+        </header>
+
+        <div class="main">
+            <form>
+                <div><input type="text" required id="name" placeholder="Name" minlength="1" maxlength="30" size="32"></div>
+                <div><label for="price">Price:</label><input type="number" required id="price" min="0" value="0" step=".01"></div>
+                <div>
+                    <select name="heat" id="heat">
+                        <option value="">--Heat (optional)--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                 </div>
+
+                <div class="toppings">
+                    <p>Toppings:</p>
+                    <div><input type="checkbox" name="toppings" value="pepperoni"><label>Pepperoni</label></div>
+                    <div><input type="checkbox" name="toppings" value="cheese"><label>Cheese</label></div>
+                    <div><input type="checkbox" name="toppings" value="french fries"><label>French fries</label></div>
+                    <div><input type="checkbox" name="toppings" value="pineapple"><label>Pineapple</label></div>
+                </div>
+
+                <div>
+                    <p>Photo:</p>
+                    <input type="radio" id="photo1" name="photo" value="./pics/photo1.jpg"><label><img src="./pics/photo1.jpg" alt="Photo 1" width="50" height="50"/></label>
+                    <input type="radio" id="photo2" name="photo" value="./pics/photo2.jpg"><label><img src="./pics/photo2.jpg" alt="Photo 2" width="50" height="50"/></label>
+                    <input type="radio" id="photo3" name="photo" value="./pics/photo3.png"><label><img src="./pics/photo3.png" alt="Photo 3" width="50" height="50"/></label>
+                </div>
+
+                <button type="submit">Add pizza</button></div>
+            </form>
+
+            <div class="pizzaList">
+                <ul></ul>
+                <a class="clearAll" id="clearAll">Clear All</a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</body>
+</html>
