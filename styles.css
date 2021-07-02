@@ -105,9 +105,18 @@ button:hover {
     overflow-y: auto;
 }
 
+.tableColumnNames {
+
+}
+
+.tableColumn{
+    display: inline;
+    padding-right: 20px;
+}
+
 ul {
-    padding-left: 0px;
-    list-style: none;
+     padding-left: 0px;
+     list-style: none;
 }
 
 li {

@@ -19,7 +19,7 @@
         </header>
 
         <div class="main">
-            <form>
+            <form id="form">
                 <div><input type="text" required id="name" placeholder="Name" minlength="1" maxlength="30" size="32"></div>
                 <div><label for="price">Price:</label><input type="number" required id="price" min="0" value="0" step=".01"></div>
                 <div>
@@ -50,6 +50,14 @@
             </form>
 
             <div class="pizzaList">
+                <div class="tableColumnNames">
+                    <p class="tableColumn">ID</p>
+                    <p class="tableColumn">Name</p>
+                    <p class="tableColumn">Price</p>
+                    <p class="tableColumn">Heat</p>
+                    <p class="tableColumn">Toppings</p>
+                    <p class="tableColumn">Photo</p>
+                </div>
                 <ul></ul>
                 <a class="clearAll" id="clearAll">Clear All</a>
             </div>
