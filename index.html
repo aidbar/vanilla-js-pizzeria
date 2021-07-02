@@ -24,7 +24,7 @@
                 <div><label for="price">Price:</label><input type="number" required id="price" min="0" value="0" step=".01"></div>
                 <div>
                     <select name="heat" id="heat">
-                        <option value="">--Heat (optional)--</option>
+                        <option value="0">--Heat (optional)--</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -49,18 +49,29 @@
                 <button type="submit">Add pizza</button></div>
             </form>
 
-            <div class="pizzaList">
-                <div class="tableColumnNames">
-                    <p class="tableColumn">ID</p>
-                    <p class="tableColumn">Name</p>
-                    <p class="tableColumn">Price</p>
-                    <p class="tableColumn">Heat</p>
-                    <p class="tableColumn">Toppings</p>
-                    <p class="tableColumn">Photo</p>
-                </div>
-                <ul></ul>
-                <a class="clearAll" id="clearAll">Clear All</a>
+        <div class="pizzaList">
+            <div class="tableColumnNames">
+                <p class="tableColumn">ID</p>
+                <p class="tableColumn">Name</p>
+                <p class="tableColumn">Price</p>
+                <p class="tableColumn">Heat</p>
+                <p class="tableColumn">Toppings</p>
+                <p class="tableColumn">Photo</p>
             </div>
+            <div class="sortingDropdown">
+                <select name="sortingDropdown" id="sortingDropdown">
+                    <option value="">--Sort by:--</option>
+                    <option value="nameASC">Name (A -> Z)</option>
+                    <option value="nameDESC">Name (Z -> A)</option>
+                    <option value="priceASC">Price (low to high)</option>
+                    <option value="priceDESC">Price (high to low)</option>
+                    <option value="heatASC">Heat (low to high)</option>
+                    <option value="heatDESC">Heat (high to low)</option>
+                </select>
+            </div>
+            <ul></ul>
+            <a class="clearAll" id="clearAll">Clear All</a>
+        </div>
         </div>
 
         <script type="text/javascript" src="app.js"></script>
